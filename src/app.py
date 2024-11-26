@@ -12,6 +12,11 @@ def menu_principal():
     print("2. Quotes to Scrape")
     print("3. Mercado Libre")
     opcion = input("Ingrese el número de la opción deseada: ")
+
+    # Si input esta vacio colocar 3 por defecto para seleccionar Mercado Libre para evitar errores en el yml
+    if opcion == "":
+        opcion = "3"
+    
     return opcion
 
 # Función para Mercado Libre - Selección de país
@@ -100,6 +105,11 @@ def scraping_quotes_to_scrape():
 
 # Función de scraping para Mercado Libre
 def scraping_mercado_libre(url_base, busqueda):
+
+    # Por defecto, se buscarán los primeros 5 productos y si el término de busqueda viene vacio se busca "celulares"
+    if busqueda == "":
+        busqueda = "celulares"
+
     url = f"{url_base}/{busqueda.replace(' ', '%20')}"
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"

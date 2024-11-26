@@ -1,4 +1,4 @@
-name: Scraping CI
+name: Scraping CI/CD Pipeline
 
 on:
   push:
