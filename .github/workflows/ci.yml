@@ -6,7 +6,7 @@ on:
       - main
       - dev
   schedule:
-    - cron: "0 */1 * * *" # cada hora
+    - cron: "0 */24 * * *" # cada 24 horas
 
 jobs:
   run-script:
