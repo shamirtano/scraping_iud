@@ -11,7 +11,8 @@ def menu_principal():
     print("1. Books to Scrape")
     print("2. Quotes to Scrape")
     print("3. Mercado Libre")
-    opcion = input("Ingrese el número de la opción deseada: ")
+    # opcion = input("Ingrese el número de la opción deseada: ")
+    opcion = ""
 
     # Si input esta vacio colocar 3 por defecto para seleccionar Mercado Libre para evitar errores en el yml
     if opcion == "":
@@ -40,7 +41,8 @@ def menu_mercado_libre():
     print("16. El Salvador")
     print("17. Uruguay")
     print("18. Venezuela")
-    opcion = input("Ingrese el número de la opción deseada: ")
+    # opcion = input("Ingrese el número de la opción deseada: ")
+    opcion = ""
 
     # Si input esta vacio colocar 5 por defecto
     if opcion == "":
@@ -168,7 +170,8 @@ elif opcion == "2":
 elif opcion == "3":
     url_base = menu_mercado_libre()
     if url_base:
-        busqueda = input("Ingrese el término de búsqueda: ")
+        # busqueda = input("Ingrese el término de búsqueda: ")
+        busqueda = "" # Si no se ingresa nada se busca por defecto "celulares" para evitar errores en el yml
         scraping_mercado_libre(url_base, busqueda)
     else:
         print("Opción de país no válida. Intente de nuevo.")
