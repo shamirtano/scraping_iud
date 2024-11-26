@@ -2,7 +2,7 @@
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
-import json
+# import json
 
 # Metodos a utilizar
 # Función para mostrar un menú de opciones
