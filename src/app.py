@@ -37,6 +37,10 @@ def menu_mercado_libre():
     print("18. Venezuela")
     opcion = input("Ingrese el número de la opción deseada: ")
 
+    # Si input esta vacio colocar 5 por defecto
+    if opcion == "":
+        opcion = "5"
+
     paises = {
         "1": "https://listado.mercadolibre.com.ar",
         "2": "https://listado.mercadolibre.com.bo",
@@ -145,7 +149,7 @@ def scraping_mercado_libre(url_base, busqueda):
         print()
 
 # Ejecución principal
-opcion = menu_principal()
+opcion = menu_principal() 
 
 if opcion == "1":
     scraping_books_to_scrape()
