@@ -1,6 +1,7 @@
 # **Evidencia de Aprendizaje 1**
 
 #### Shamir Tano Morales
+#### Kelly Vega Morales
 
 #### Grupo 100 - Programación para el Análisis de Datos
 
