@@ -93,7 +93,7 @@ def scraping_mercado_libre(url_base, busqueda):
 
     # Por defecto, se buscarán los primeros 100 productos y si el término de busqueda viene vacio se busca "smartwatch"
     if busqueda == "":
-        busqueda = "smartwatch nivel medico"
+        busqueda = "smartwatch"
 
     url = f"{url_base}/{busqueda.replace(' ', '%20')}"
     headers = {
